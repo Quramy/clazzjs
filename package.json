@@ -1,0 +1,25 @@
+{
+  "name": "clazzjs",
+  "version": "0.0.0",
+  "description": "Clazz.js is a simple JavaScript class providing liblary.",
+  "homepage": "https://github.com/quramy/clazzjs",
+  "bugs": "https://github.com/quramy/clazzjs/issues",
+  "author": {
+    "name": "quramy",
+    "email": "yosuke.kurami@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quramy/clazzjs"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.0"
+  }
+}
