@@ -3,7 +3,25 @@
 Clazz.js is a simple JavaScript class providing liblary.
 
 ## Getting Started
-### using node.js
+### using in webapp
+Download js file from [here](https://raw.github.com/Quramy/clazzjs/master/clazz.min.js).
+```html
+<script type="text/javascript" src="clazz.min.js"></script>
+```
+```javascript
+var MyClass = new Clazz({
+	init: function(message){
+		this.message = message;
+	},
+	say: function(){
+		console.log(this.message);
+	}
+});
+
+var myClass = new MyClass('I am an instance of MyClass.');
+myClass.say();
+```
+### using in node.js app
 Install the module with: `npm install clazzjs`
 
 ```javascript
