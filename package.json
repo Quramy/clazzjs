@@ -1,6 +1,6 @@
 {
   "name": "clazzjs",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Clazz.js is a simple JavaScript class providing liblary.",
   "homepage": "https://github.com/quramy/clazzjs",
   "bugs": "https://github.com/quramy/clazzjs/issues",
@@ -20,6 +20,7 @@
   "devDependencies": {
     "grunt-contrib-jshint": "~0.6.0",
     "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt-contrib-watch": "~0.5.0"
+    "grunt-contrib-watch": "~0.5.0",
+    "grunt-contrib-uglify": "~0.1.2"
   }
 }
