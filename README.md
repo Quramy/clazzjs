@@ -1,4 +1,4 @@
-# clazzjs [![Build Status](https://secure.travis-ci.org/quramy/clazzjs.png?branch=master)](http://travis-ci.org/quramy/clazzjs)
+# Clazz.js 
 
 Clazz.js is a simple JavaScript class providing liblary.
 
