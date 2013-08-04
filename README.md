@@ -41,7 +41,56 @@ myClass.say();
 ```
 
 ## Documentation
-_(Coming soon)_
+### Create a Class
+```javascript
+var MyClass = new Clazz({
+	// The first argument is a instance method module.
+	init: function(){
+		// "init" is a special method which is executed in the constructor.
+	},
+	someMethod: function(){
+		// you can define
+	},
+	someAttribute: ''
+},
+{
+	// The second argument is a static method module.
+	someStaticMethod: function(){
+	}
+});
+
+new MyClass().someMethod(); // calling a instance method.
+MyClass.someStaticMethod(); // calling a static method.
+```
+### Inheritance
+Clazz.js supports Inheritance. Use "extend" method to create a sub class.
+In subclass method, you can use access super method by "_dl" property.
+The "_dl" property returns a function to delegate super method.
+```javascript
+var SubClass = MyClass.extend({
+	someMethod: function(){
+		this._dl('someMethod')(); // call "someMethod" which is deifined by the super class.
+	}
+});
+```
+
+### Mix in
+Using "mixin" method, you can import an external module to your class.
+```javascript
+var module = {
+	action: function(){
+		console.log(this.message);
+	};
+};
+
+var MyClass = new Clazz({
+	init:function(message){
+		this.message = message;
+	}
+}).mixin(module);
+new MyClass('Hello!').action(); // -> 'Hello!'
+```
+
 
 ## Examples
 _(Coming soon)_
