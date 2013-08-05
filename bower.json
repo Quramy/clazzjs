@@ -1,0 +1,11 @@
+{
+  "name": "clazzjs",
+  "version": "1.0.1",
+	"main": "clazz.min.js",
+	"ignore": [
+		".jshintrc",
+		"package.json",
+		"index.js",
+		"test/**"
+	]
+}
