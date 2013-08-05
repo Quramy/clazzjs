@@ -1,7 +1,7 @@
 {
   "name": "clazzjs",
-  "version": "0.9.0",
-  "description": "Clazz.js is a simple JavaScript class providing liblary.",
+  "version": "0.9.1",
+  "description": "Clazz is a simple JavaScript class providing liblary.",
   "homepage": "https://github.com/quramy/clazzjs",
   "bugs": "https://github.com/quramy/clazzjs/issues",
   "author": {
