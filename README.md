@@ -21,8 +21,19 @@ var MyClass = new Clazz({
 var myClass = new MyClass('I am an instance of MyClass.');
 myClass.say();
 ```
+#### using in bower
+If you use bower([http://bower.io/]), you can install Clazz.js using following command.
+
+```
+$ bower install clazzjs
+```
+
 ### using in node.js app
-Install the module with: `npm install clazzjs`
+Install the module with the following npm command.
+
+```
+$ npm install clazzjs`
+```
 
 ```javascript
 var Clazz = require('clazzjs');
@@ -45,7 +56,7 @@ myClass.say();
 Using "Clazz" constructor, you can define new class.
 ```javascript
 var MyClass = new Clazz({
-	// The first argument is a instance method module.
+	// The first argument is an instance method module.
 	init: function(){
 		// The "init" is a special method which is executed in the constructor.
 	},
@@ -55,18 +66,17 @@ var MyClass = new Clazz({
 	someAttribute: '' // You can also define some attributes.
 },
 {
-	// The second argument is a static method module.
+	// The second argument is a static module.
 	someStaticMethod: function(){
 	}
 });
 
-new MyClass().someMethod(); // calling a instance method.
+new MyClass().someMethod(); // calling an instance method.
 MyClass.someStaticMethod(); // calling a static method.
 ```
 ### Inheritance
 Clazz.js supports Inheritance. Use "extend" method to create a sub class.
-In subclass method, you can use access super method by "_dl" property.
-The "_dl" property returns a function to delegate super method.
+In subclass method definition, you can access the super method by using "_dl" property("_dl" stands for "delegation").
 ```javascript
 var SubClass = MyClass.extend({
 	someMethod: function(){
@@ -92,6 +102,23 @@ var MyClass = new Clazz({
 new MyClass('Hello!').action(); // -> 'Hello!'
 ```
 
+### Selective mix in
+You can import module elements selectively, using "include" option.
+```javascript
+var module = {
+	hoge: 'hoge',
+	hogeHoge: 'hogeHoge',
+	foo: 'foo'
+};
+
+var MyClass = new Clazz().mixin(module, {
+	include: 'hoge.*' // RegExp condtion to import
+});
+
+console.log(new MyClass().hoge) // -> hoge
+console.log(new MyClass().hogeHoge) // -> hogeHoge
+console.log(new MyClass().foo) // -> undefined
+```
 
 ## Examples
 _(Coming soon)_
