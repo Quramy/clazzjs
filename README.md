@@ -25,7 +25,7 @@ myClass.say();
 Install the module with: `npm install clazzjs`
 
 ```javascript
-var Clazz = require('clazz');
+var Clazz = require('clazzjs');
 
 var MyClass = new Clazz({
 	init: function(message){
@@ -42,16 +42,17 @@ myClass.say();
 
 ## Documentation
 ### Create a Class
+Using "Clazz" constructor, you can define new class.
 ```javascript
 var MyClass = new Clazz({
 	// The first argument is a instance method module.
 	init: function(){
-		// "init" is a special method which is executed in the constructor.
+		// The "init" is a special method which is executed in the constructor.
 	},
 	someMethod: function(){
-		// you can define
+		// You can define methods.
 	},
-	someAttribute: ''
+	someAttribute: '' // You can also define some attributes.
 },
 {
 	// The second argument is a static method module.
@@ -99,7 +100,8 @@ _(Coming soon)_
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
+* 2013/08/05 ver 1.0.1
+ * First release.
 
 ## License
 Copyright (c) 2013 quramy. Licensed under the MIT license.
