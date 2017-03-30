@@ -1,5 +1,7 @@
 # Clazz.js 
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Quramy/clazzjs.svg)](https://greenkeeper.io/)
+
 Clazz.js is a simple JavaScript class providing liblary.
 
 ## Getting Started
